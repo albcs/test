@@ -1,0 +1,93 @@
+.wrapper {
+    height: 100vh;
+    width: 93.75%;
+    background-image: url("./images/singapore.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    margin-left: 6.25%;
+}
+
+.header {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 40px;
+    line-height: 30px;
+    color: #000000;
+    font-family: "Montserrat";
+    font-weight: 900;
+    margin: 30px 0 0 30px;
+}
+
+.navbar {
+    width: 480px;
+    margin: 30px 30px 0 0;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul li a {
+    display: flex;
+    width: 100px;
+    height: 41px;
+    border-radius: 20px;
+    color: #000000;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat";
+}
+
+.navbar ul li a:hover {
+    background-color: #000000;
+    color: #fff;
+}
+
+.explore {
+    margin: 260px auto 0;
+    width: fit-content;
+    box-shadow: 10px 85px 62px 29px rgba(0,0,0,0.86);
+}
+
+.explore button{
+    width: 380px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #000000;
+    color: #fff;
+    font-family: "Montserrat";
+    border: none;
+    text-transform: uppercase;
+}
+
+.sidebar {
+    width: 6.25%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+}
+
+.sidebar p {
+    transform: rotate(-90deg);
+    width: 500px;
+    margin-left: calc(100% - 293px);
+    font-family: "Montserrat";
+}
+
+@media (max-width: 800px) {
+    .sidebar {
+        display: none;
+    }
+
+    .wrapper {
+        margin-left: 0;
+        width: 100vw;
+    }
+}
